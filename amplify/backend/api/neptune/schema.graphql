@@ -1,0 +1,64 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type Result {
+  name: String!
+}
+
+type Profile {
+  search_name: String
+  usage: String
+  belong_to: String
+  authored_by: String
+  affiliated_with: String
+  people: String
+  made_by: String
+}
+
+type Register {
+  result: String
+}
+type GraphInfo {
+  nodes: [Nodes]
+  links: [Links]
+}
+
+type Nodes {
+  id: String
+  label: String
+}
+
+type Links {
+  source: String
+  target: String
+  value: String
+}
+type Query {
+  getResult(name: String!, value: String!): [Result]
+    @function(name: "queryNeptune-${env}")
+    @auth(rules: [{ allow: private, provider: userPools }])
+
+  getProfile(name: String!, value: String!): [Profile]
+    @function(name: "getInfoNeptune-${env}")
+    @auth(rules: [{ allow: private, provider: userPools }])
+  getGraphInfo(value: String!): GraphInfo
+    @function(name: "getGraphData-${env}")
+    @auth(rules: [{ allow: private, provider: userPools }])
+}
+
+type Mutation {
+  registerInfo(
+    value: String!
+    name: String
+    edge: String
+    vertex: String
+    property: String
+    source: String
+    sourceLabel: String
+    destination: String
+    destLabel: String
+  ): [Register]
+    @function(name: "registerNeptune-${env}")
+    @auth(rules: [{ allow: private, provider: userPools }])
+}

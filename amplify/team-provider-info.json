@@ -1,0 +1,48 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactamplifyneptunew-dev-145924-authRole",
+      "UnauthRoleArn": "arn:aws:iam::535166975454:role/amplify-reactamplifyneptunew-dev-145924-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::535166975454:role/amplify-reactamplifyneptunew-dev-145924-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactamplifyneptunew-dev-145924-deployment",
+      "UnauthRoleName": "amplify-reactamplifyneptunew-dev-145924-unauthRole",
+      "StackName": "amplify-reactamplifyneptunew-dev-145924",
+      "StackId": "arn:aws:cloudformation:us-east-1:535166975454:stack/amplify-reactamplifyneptunew-dev-145924/09d75010-8a82-11ec-bc8b-0e5b8b80e06d",
+      "AmplifyAppId": "dectrvu0wtsvp"
+    },
+    "categories": {
+      "auth": {
+        "reactamplifyneptunew7100eb0e": {}
+      },
+      "function": {
+        "queryNeptune": {
+          "deploymentBucketName": "amplify-reactamplifyneptunew-dev-145924-deployment",
+          "s3Key": "amplify-builds/queryNeptune-68454358444b58693654-build.zip"
+        },
+        "getGraphData": {
+          "deploymentBucketName": "amplify-reactamplifyneptunew-dev-145924-deployment",
+          "s3Key": "amplify-builds/getGraphData-61483833385066493638-build.zip"
+        },
+        "registerNeptune": {
+          "deploymentBucketName": "amplify-reactamplifyneptunew-dev-145924-deployment",
+          "s3Key": "amplify-builds/registerNeptune-553869764a4e78415361-build.zip"
+        },
+        "getInfoNeptune": {
+          "deploymentBucketName": "amplify-reactamplifyneptunew-dev-145924-deployment",
+          "s3Key": "amplify-builds/getInfoNeptune-2b79527a564967587459-build.zip"
+        },
+        "reactamplifyneptunewgremlin": {
+          "deploymentBucketName": "amplify-reactamplifyneptunew-dev-145924-deployment",
+          "s3Key": "amplify-builds/reactamplifyneptunewgremlin-LambdaLayerVersionfd5eccc3-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dectrvu0wtsvp",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

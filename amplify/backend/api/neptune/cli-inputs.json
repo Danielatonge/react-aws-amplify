@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "neptune",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/ec2-user/environment/react-amplify-neptune-workshop/amplify/backend/api/neptune/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authreactamplifyneptunew7100eb0e"
+    }
+  }
+}

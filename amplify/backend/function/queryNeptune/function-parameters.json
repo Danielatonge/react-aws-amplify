@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "function": {
+      "getGraphData": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

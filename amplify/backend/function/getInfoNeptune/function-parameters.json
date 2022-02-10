@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "auth": {
+      "reactamplifyneptunew7100eb0e": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    },
+    "function": {
+      "getGraphData": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
